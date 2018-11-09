@@ -1,0 +1,22 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:8080",
+            "name": "Launch Chrome against localhost",
+            "file": "${workspaceRoot}/bin/index.html",
+            "webRoot": "${workspaceRoot}",
+            "runtimeArgs": [
+                "--allow-file-access-from-files",
+                "--allow-file-access-frome-files",
+                " --disable-web-security"
+            ],
+            "userDataDir": "${workspaceRoot}/client/.vscode/chrome"
+        }
+    ]
+}
