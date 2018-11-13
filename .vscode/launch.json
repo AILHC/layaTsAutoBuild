@@ -7,8 +7,7 @@
         {
             "type": "chrome",
             "request": "launch",
-            "url": "http://localhost:8080",
-            "name": "Launch Chrome against localhost",
+            "name": "启动 Chrome 并打开 localhost",
             "file": "${workspaceRoot}/bin/index.html",
             "webRoot": "${workspaceRoot}",
             "runtimeArgs": [
@@ -16,7 +15,9 @@
                 "--allow-file-access-frome-files",
                 " --disable-web-security"
             ],
-            "userDataDir": "${workspaceRoot}/client/.vscode/chrome"
+            "userDataDir": "${workspaceRoot}/.vscode/chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
         }
     ]
 }
